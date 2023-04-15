@@ -17,11 +17,19 @@ public class Endereco {
         this.apartamento = apartamento;
     }
 
-    public String enderecoFormatado(){
-        StringBuilder aux = new StringBuilder();
-        aux.append(this.rua.toUpperCase() + ", " + this.bairro.toUpperCase() +
-        ", " + this.numero + ", AP" + this.apartamento.toUpperCase());
+    public String getRua() {
+        return rua;
+    }
 
-        return aux.toString();
+    public String getBairro() {
+        return bairro;
+    }
+
+    public String getNumero() {
+        return numero;
+    }
+
+    public String getApartamento() {
+        return apartamento;
     }
 }
