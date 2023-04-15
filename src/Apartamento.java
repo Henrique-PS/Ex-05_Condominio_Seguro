@@ -4,8 +4,8 @@ public class Apartamento extends Imovel {
     private final double ALIQUOTA = 0.004;
     private final double DESCONTO = 0.05;
 
-    public Apartamento(double valorVenda, int ano, Endereco endereco) {
-        super(valorVenda, ano, endereco);
+    public Apartamento(double valorVenda, int ano, int qtdBeneficios, Endereco endereco) {
+        super(valorVenda, ano, qtdBeneficios, endereco);
     }
 
     @Override
@@ -18,12 +18,12 @@ public class Apartamento extends Imovel {
     }
 
     @Override
-    public double calculaValorAluguel(int qtdBeneficios) {
+    public double calculaValorAluguel() {
         double valorAluguel;
         if (this.defineValorDesconto() != 0) {
-            valorAluguel = ((this.valorVenda * this.ALIQUOTA) + (this.VALOR_BENEFICIO * qtdBeneficios) + this.TAXA_CONDOMINIO) * defineValorDesconto();
+            valorAluguel = ((this.valorVenda * this.ALIQUOTA) + (this.VALOR_BENEFICIO * this.qtdBeneficios) + this.TAXA_CONDOMINIO) * defineValorDesconto();
         } else {
-            valorAluguel = (this.valorVenda * this.ALIQUOTA) + (this.VALOR_BENEFICIO * qtdBeneficios) + this.TAXA_CONDOMINIO;
+            valorAluguel = (this.valorVenda * this.ALIQUOTA) + (this.VALOR_BENEFICIO * this.qtdBeneficios) + this.TAXA_CONDOMINIO;
         }
 
         return valorAluguel;

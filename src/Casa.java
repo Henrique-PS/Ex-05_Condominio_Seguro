@@ -3,8 +3,8 @@ public class Casa extends Imovel{
     private final double ALIQUOTA = 0.005;
     private final double DESCONTO = 0.1;
 
-    public Casa(double valorVenda, int ano, Endereco endereco, double seguroIncendio) {
-        super(valorVenda, ano, endereco);
+    public Casa(double valorVenda, int ano, int qtdBeneficios, Endereco endereco, double seguroIncendio) {
+        super(valorVenda, ano, qtdBeneficios, endereco);
         this.seguroIncendio = seguroIncendio;
     }
 
@@ -18,12 +18,12 @@ public class Casa extends Imovel{
     }
 
     @Override
-    public double calculaValorAluguel(int qtdBeneficios){
+    public double calculaValorAluguel(){
         double valorAluguel;
         if(this.defineValorDesconto() != 0){
-            valorAluguel = ((this.valorVenda * this.ALIQUOTA) + (this.VALOR_BENEFICIO * qtdBeneficios) + valorMensalSeguro()) * defineValorDesconto();
+            valorAluguel = ((this.valorVenda * this.ALIQUOTA) + (this.VALOR_BENEFICIO * this.qtdBeneficios) + valorMensalSeguro()) * defineValorDesconto();
         } else {
-            valorAluguel = (this.valorVenda * this.ALIQUOTA) + (this.VALOR_BENEFICIO * qtdBeneficios) + valorMensalSeguro();
+            valorAluguel = (this.valorVenda * this.ALIQUOTA) + (this.VALOR_BENEFICIO * this.qtdBeneficios) + valorMensalSeguro();
         }
 
         return valorAluguel;
