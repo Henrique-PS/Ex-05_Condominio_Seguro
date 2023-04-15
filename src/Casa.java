@@ -1,6 +1,8 @@
 public class Casa extends Imovel{
     private double seguroIncendio;
     private final double ALIQUOTA = 0.005;
+    private final double DESCONTO = 0.1;
+
     public Casa(double valorVenda, int ano, Endereco endereco, double seguroIncendio) {
         super(valorVenda, ano, endereco);
         this.seguroIncendio = seguroIncendio;
@@ -39,6 +41,4 @@ public class Casa extends Imovel{
 
         return aux.toString();
     }
-
-    private final double DESCONTO = 0.1;
 }
