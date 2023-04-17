@@ -14,8 +14,8 @@ public class Casa extends Imovel{
      * @param qtdBeneficios Quantidades de benefícios que a casa possui
      * @param seguroIncendio Valor do seguro incêndio
      */
-    public Casa(double valorVenda, int ano, int qtdBeneficios, double seguroIncendio) {
-        super(valorVenda, ano, qtdBeneficios);
+    public Casa(double valorVenda, int ano, int qtdBeneficios, double seguroIncendio, int idProprietario) {
+        super(valorVenda, ano, qtdBeneficios, idProprietario);
         this.seguroIncendio = seguroIncendio;
         this.enderecoCasa = enderecoCasa;
     }

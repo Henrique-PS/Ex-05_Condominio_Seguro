@@ -8,7 +8,7 @@ public class CasaTest {
     Endereco enderecoTest;
     @BeforeEach
     public void prepare(){
-        casaTest = new Casa(500000, 2000, 2, 500);
+        casaTest = new Casa(500000, 2000, 2, 500, 1);
         enderecoTest = new Endereco("Rua RuaTeste", "BairroTeste", "203");
     }
 

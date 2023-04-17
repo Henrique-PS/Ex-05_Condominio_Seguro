@@ -9,7 +9,7 @@ public class ApartamentoTest {
 
     @BeforeEach
     public void prepare(){
-        apartamentoTest = new Apartamento(500000, 2019, 1);
+        apartamentoTest = new Apartamento(500000, 2019, 1, 1);
         enderecoTest = new Endereco("Rua RuaTeste", "BairroTeste", "203", "804A");
     }
 

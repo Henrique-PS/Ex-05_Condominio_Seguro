@@ -7,8 +7,13 @@
     <list default="true" id="cb3cdd50-ec26-4abd-a42f-4131cb2dc647" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Apartamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Apartamento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApartamentoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApartamentoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Casa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Casa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CasaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CasaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Imobiliaria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Imobiliaria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Imovel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Imovel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Proprietario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Proprietario.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,45 +41,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/Documents/PUC/3º Período/PM/Exercicio05/src&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "ToolWindowRun.ShowToolbar": "false",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/User/Documents/PUC/3º Período/PM/Exercicio05/src",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\User\Documents\PUC\3º Período\PM\Exercicio05\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ApartamentoTest">
+  <component name="RunManager" selected="JUnit.ImobiliariTest">
     <configuration name="ApartamentoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Exercicio05" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ApartamentoTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ApartamentoTest.deveCalcularOvalorDoDesconto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Exercicio05" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ApartamentoTest" />
-      <option name="METHOD_NAME" value="deveCalcularOvalorDoDesconto" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -88,21 +84,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CasaTest.deveCalcularOValorDoAluguel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ImobiliariTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Exercicio05" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CasaTest" />
-      <option name="METHOD_NAME" value="deveCalcularOValorDoAluguel" />
+      <option name="MAIN_CLASS_NAME" value="ImobiliariTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ImobiliariTest.deveAdicionarImovel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Exercicio05" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ImobiliariTest" />
+      <option name="METHOD_NAME" value="deveAdicionarImovel" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CasaTest.deveFormatarOendereço" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ImobiliariTest.deveRemoverProprietario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Exercicio05" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CasaTest" />
-      <option name="METHOD_NAME" value="deveFormatarOendereço" />
+      <option name="MAIN_CLASS_NAME" value="ImobiliariTest" />
+      <option name="METHOD_NAME" value="deveRemoverProprietario" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -110,11 +115,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ApartamentoTest" />
+        <item itemvalue="JUnit.ImobiliariTest" />
+        <item itemvalue="JUnit.ImobiliariTest.deveRemoverProprietario" />
         <item itemvalue="JUnit.CasaTest" />
-        <item itemvalue="JUnit.CasaTest.deveCalcularOValorDoAluguel" />
-        <item itemvalue="JUnit.ApartamentoTest.deveCalcularOvalorDoDesconto" />
-        <item itemvalue="JUnit.CasaTest.deveFormatarOendereço" />
+        <item itemvalue="JUnit.ApartamentoTest" />
+        <item itemvalue="JUnit.ImobiliariTest.deveAdicionarImovel" />
       </list>
     </recent_temporary>
   </component>
@@ -128,7 +133,7 @@
       <updated>1681520756959</updated>
       <workItem from="1681520758463" duration="15446000" />
       <workItem from="1681683499640" duration="10429000" />
-      <workItem from="1681694106638" duration="384000" />
+      <workItem from="1681694106638" duration="12460000" />
     </task>
     <servers />
   </component>
@@ -139,9 +144,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/CasaTest.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="3" />
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

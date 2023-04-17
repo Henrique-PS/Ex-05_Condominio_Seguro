@@ -13,8 +13,8 @@ public class Apartamento extends Imovel {
      * @param ano Ano de construção do apartamento
      * @param qtdBeneficios Quantidades de benefícios o apartamento possui
      */
-    public Apartamento(double valorVenda, int ano, int qtdBeneficios) {
-        super(valorVenda, ano, qtdBeneficios);
+    public Apartamento(double valorVenda, int ano, int qtdBeneficios, int idProprietario) {
+        super(valorVenda, ano, qtdBeneficios, idProprietario);
     }
     //#endregion
 
