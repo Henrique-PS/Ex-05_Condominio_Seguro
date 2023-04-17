@@ -3,7 +3,6 @@ public abstract class Imovel {
     protected double valorVenda;
     protected int ano;
     private double valorAluguel;
-
     protected int qtdBeneficios;
     protected final double VALOR_BENEFICIO = 100;
     protected final double MAX_DESCONTO = 0.3;
@@ -11,19 +10,23 @@ public abstract class Imovel {
     private String enderecoFormatado;
 
 
-    public Imovel(double valorVenda, int ano, int qtdBeneficios, Endereco endereco) {
+    public Imovel(double valorVenda, int ano, int qtdBeneficios) {
         this.valorVenda = valorVenda;
         this.ano = ano;
-        this.endereco = endereco;
         this.qtdBeneficios = qtdBeneficios;
+        this.endereco = endereco;
     }
 
-    public double defineValorDesconto(){
+    public double calculaValorDesconto(){
         return this.descontoTotal;
     }
 
     public double calculaValorAluguel(){
         return this.valorAluguel;
+    }
+
+    public Endereco enderecoImovel(Endereco novoEndereco){
+        return this.endereco;
     }
 
     public String enderecoFormatado(){
