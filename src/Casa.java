@@ -29,13 +29,17 @@ public class Casa extends Imovel{
      */
     @Override
     public double calculaValorDesconto(){
-        double descontoTotal = ((2023 - this.ano) / 5) * this.DESCONTO;
+        double descontoTotal = ((2023 - this.ano) / 10) * this.DESCONTO;
         if (descontoTotal > this.MAX_DESCONTO){
             descontoTotal = 0.3;
         }
         return descontoTotal;
     }
 
+    /**
+     * Calcula o valor do mensal do seguro
+     * @return O valor mesnsal do seguro
+     */
     public double valorMensalSeguro() {
         return this.seguroIncendio / 12;
     }
@@ -43,18 +47,13 @@ public class Casa extends Imovel{
     /**
      * Calcula o valor do aluguel da casa com base no valor da alíquota sobre o valor de venda do imóvel,
      * a quantidade bnenefícios e o desconto aplicado à casa
-     * @return O valor do aluguel da casa
+     * @return O valor do aluguel da casa arrendondado com duas casas decimais
      */
     @Override
     public double calculaValorAluguel(){
-        double valorAluguel;
-        if(this.calculaValorDesconto() != 0){
-            valorAluguel = ((this.valorVenda * this.ALIQUOTA) + (this.VALOR_BENEFICIO * this.qtdBeneficios)
-                    + valorMensalSeguro()) * calculaValorDesconto();
-        } else {
-            valorAluguel = (this.valorVenda * this.ALIQUOTA) + (this.VALOR_BENEFICIO * this.qtdBeneficios)
-                    + valorMensalSeguro();
-        }
+        double valorAluguel = ((this.valorVenda * this.ALIQUOTA) + (this.VALOR_BENEFICIO * this.qtdBeneficios)
+                + valorMensalSeguro()) * (1 - calculaValorDesconto());
+
         return Math.round(valorAluguel * 100.0)/100.0;
     }
 
@@ -78,9 +77,10 @@ public class Casa extends Imovel{
     @Override
     public String enderecoFormatado(){
         StringBuilder aux = new StringBuilder();
-        aux.append(enderecoCasa.getRua().toUpperCase() + ", " + enderecoCasa.getBairro().toUpperCase() +
-                ", " + enderecoCasa.getNumero());
+        aux.append(this.enderecoCasa.getRua().toUpperCase() + ", " + this.enderecoCasa.getBairro().toUpperCase() +
+                ", " + this.enderecoCasa.getNumero());
 
         return aux.toString();
     }
+    //#endregion
 }

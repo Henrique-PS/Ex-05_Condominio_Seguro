@@ -8,7 +8,7 @@ public class CasaTest {
     Endereco enderecoTest;
     @BeforeEach
     public void prepare(){
-        casaTest = new Casa(500000, 2010, 2, 500);
+        casaTest = new Casa(500000, 2000, 2, 500);
         enderecoTest = new Endereco("Rua RuaTeste", "BairroTeste", "203");
     }
 
@@ -19,7 +19,8 @@ public class CasaTest {
 
     @Test
     public void deveCalcularOValorDoAluguel(){
-        assertEquals(548.33, casaTest.calculaValorAluguel());
+        casaTest.calculaValorDesconto();
+        assertEquals(2193.33, casaTest.calculaValorAluguel());
     }
 
     @Test
